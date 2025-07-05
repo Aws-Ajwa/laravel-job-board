@@ -154,13 +154,14 @@
             <header class="bg-white shadow-sm">
                 <div class="mx-auto max-w-7xl px-4 py-6 sm:px-6 lg:px-8">
                     <h1 class="text-3xl font-bold tracking-tight text-gray-900">{{ $title }}</h1>
+                    <!-- $title is a prop in the views we have -->
                 </div>
             </header>
         @endif
 
         <main>
             <div class="mx-auto max-w-7xl px-4 py-6 sm:px-6 lg:px-8">
-                <!-- Your content -->
+                <!-- Your content (it comes from the x-{blade template name eg. x-layout}) -->
                 {{ $slot }}
             </div>
         </main>
